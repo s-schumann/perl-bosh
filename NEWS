@@ -1,0 +1,31 @@
+NEWS
+
+Version 0.3
+2009-09-25  Sebastian Schumann  <seb.schumann@gmail.com>
+
+    * bosh_connect.pl: Minor changes.
+    Subroutines are called from daemon. Parameters are read by daemon (from DB) and passed to subroutine.
+
+    * notes.txt: Documentation extended.
+
+    * daemon.pl: Added.
+    The script runs now as a daemon (forking) and reads input each second from database.
+    OpenSIPS writes into the database.
+    Not further daemon tests yet.
+
+Version 0.2
+2009-09-21  Sebastian Schumann  <seb.schumann@gmail.com>
+
+    * bosh_connect.pl: Major changes.
+    data.csv file with major parameters. Only SIP username and status passed via CLI.
+    Writing modified paramters after session.
+    Subroutines for each major task.
+
+    * data.csv: Data file with all users.
+
+Version 0.1
+2009-09-10  Sebastian Schumann  <seb.schumann@gmail.com>
+
+	* bosh_connect.pl: Perl file with the program. 
+	All parameters are given as command line arguments.
+	PUBLISH towards XMPP server works.

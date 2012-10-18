@@ -1,0 +1,28 @@
+XMPP BOSH implementation in Perl
+================================
+
+Overview
+--------
+BOSH implentation for integration SIP and XMPP. I did this some years ago as a proof of concept.
+
+Author
+------
+Sebastian Schumann (seb.schumann@gmail.com)
+
+Last modified: 04.10.2009
+
+Bugs
+----
+
+### XMPP
+
+- Sometimes delay (up to 10 minutes) in sending messages.
+
+- Check authorization again. Some users seem to appear online with NONE authorization. Might be problem of client (directed presence).
+
+- Timeout for network disconnected users. They should appear offline sooner.
+	Answer: Ping possible. Some clients do not support it and go offline.
+
+### Perl daemon
+
+- Online sometimes replaced by new connection. No real identification of online and still-online yet. Should be modified.
